@@ -1,3 +1,3 @@
 # hangman
 
-A text based hangmangame.
+A text based hangman game.
