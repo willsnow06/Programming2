@@ -95,11 +95,11 @@ wall7 = Wall(wall7x, wall7y, wall7w, wall7h, win)
 wall8 = Wall(wall8x, wall8y, wall8w, wall8h, win)
 
 image = pygame.image
-background = pygame.image.load(r'bricks.jpg')
-gameover = pygame.image.load(r'game_over.jpg')
-gameend = pygame.image.load(r'winscreen.jpg')
-start = pygame.image.load(r'start_screen.jpg')
-hole = pygame.image.load(r'hole.png')
+background = pygame.image.load(r'images\bricks.jpg')
+gameover = pygame.image.load(r'images\game_over.jpg')
+gameend = pygame.image.load(r'images\winscreen.jpg')
+start = pygame.image.load(r'images\start_screen.jpg')
+hole = pygame.image.load(r'images\hole.png')
 sysfont = pygame.font.get_default_font()
 font = pygame.font.SysFont(None, 48)
 left = bool
@@ -181,9 +181,9 @@ while run:
         vel = 0
         startScreen = False
         if right:
-            image = pygame.image.load(r'attack.png')
+            image = pygame.image.load(r'images\attack.png')
         if left:
-            image = pygame.image.load(r'attackInverse.png')
+            image = pygame.image.load(r'images\attackInverse.png')
         if gameOver:
           x = 225
           y = 225
@@ -246,9 +246,9 @@ while run:
         dude.attack = False
         vel = 25
         if right:
-            image = pygame.image.load(r'sword_dude.png')
+            image = pygame.image.load(r'images\sword_dude.png')
         if left:
-            image = pygame.image.load(r'sword_dudeInverse.png')
+            image = pygame.image.load(r'images\sword_dudeInverse.png')
 
     walls = [wall1, wall2, wall3, wall4, wall5, wall6, wall7, wall8]
 
